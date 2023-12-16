@@ -4,7 +4,7 @@ import ctypes
 import glfw
 import glm
 import math
-import geometriaEsfera
+import geometria_esfera
 
 VERTEX_SHADER = """
 #version 400
@@ -57,7 +57,7 @@ def compilaShaders():
 
 def esfera(): 
 
-    posicao = geometriaEsfera.esfera(2,20,20)
+    posicao = geometria_esfera.esfera(2,20,20)
 
     VAO = GL.glGenVertexArrays(1)
     GL.glBindVertexArray(VAO)

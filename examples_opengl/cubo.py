@@ -8,8 +8,8 @@ import math
 VERTEX_SHADER = """
 #version 400
 
-in vec3 attr_posicao;
-in vec3 attr_cor;
+layout(location=0) in vec3 attr_posicao;
+layout(location=1) in vec3 attr_cor;
 
 uniform mat4 mvp;
 out vec3 cor;
