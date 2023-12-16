@@ -182,7 +182,7 @@ def inicializa():
     cuboVAO = cubo()
     GL.glUseProgram(progId)
     GL.glActiveTexture(GL.GL_TEXTURE0)
-    loadTexture("./textures/uv_grid_opengl.png")
+    loadTexture("./textures/die.png")
     GL.glUniform1i(GL.glGetUniformLocation(progId, "textureSlot"),0)
 
 a = 0
