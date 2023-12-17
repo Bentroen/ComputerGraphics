@@ -31,9 +31,10 @@ function draw() {
 
     // Get angle of hour and minute clock hands
     let hourFraction = m / 60;
-    let hourAngle = map((h % 12) + hourFraction, 0, 12, 0, TWO_PI);
+    let hourAngle = map((h % 12) + hourFraction, 0, 12, 0, TWO_PI) - HALF_PI;
     let minuteFraction = s / 60;
-    let minuteAngle = map((m % 60) + minuteFraction, 0, 60, 0, TWO_PI);
+    let minuteAngle =
+        map((m % 60) + minuteFraction, 0, 60, 0, TWO_PI) - HALF_PI;
     let secondAngle = map(s, 0, 60, 0, TWO_PI) - HALF_PI;
 
     // Draw hour hand
