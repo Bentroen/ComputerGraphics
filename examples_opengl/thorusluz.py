@@ -40,7 +40,7 @@ void main(void)
     float ambientCoef = 0.2f;
     vec3 lightColor = vec3(1.0f);
     vec3 lightPos = vec3(0.0f,5.0f,5.0f);
-    vec3 objectColor = vec3(1.0f,0.0f,0.0f);
+    vec3 objectColor = vec3(0.0f,1.0f,0.5f);
 
     vec3 norm = normalize(normal);
     vec3 lightDir = normalize(lightPos - fragCoord);
