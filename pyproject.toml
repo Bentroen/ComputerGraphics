@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "computergraphics"
+version = "0.1.0"
+description = ""
+authors = ["Bentroen <bemcdc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyOpenGL = "^3.1.7"
+glfw = "^2.6.4"
+PyGLM = "^2.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
